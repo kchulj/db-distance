@@ -1,0 +1,35 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+select, option {
+    width:300px;
+    height:45px;
+    font-size: 24px;
+  }
+
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.firstbox, .secondbox {
+    padding: 10px;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5px;
+    text-align: center;
+  }

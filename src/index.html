@@ -1,26 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  
-<div style="padding:200px; text-align:center">
 
+<h1>Train Distance Calulator</h1>
+
+<div class="firstbox">
 <label for="origin">Select origin:</label>
 <select id="origin" onclick="calculate('origin','dest')">
 </select>
-<br>
+</div>
 
 <script src="cityList.js"></script>
 <script src="calculate.js"></script>
+<script src="getDistance.js"></script>
 
+<div class="secondbox">
 <label for="dest">Select destination:</label>
 <select id="dest">
 </select>
-<br>
+</div>
 
-<script src="getDistance.js"></script>
-
+<div class="wrapper">
 <button onclick="getDistance()">Search</button>
 </div>
 

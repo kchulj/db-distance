@@ -19,13 +19,14 @@ function getDistance()
     const du_df = 15; //15.4
     const df_d = 8 // 8.2
     const d_k = 39.5;
+    const k_bn = 32; //31.9
+    const bn_ko = 59; //59.3
+    const ko_mz = 92; //91.8
 
     const h_f = 345;
     const f_ff = 11; //11.4
     const k_ff = 169; //169.3
     const k_aa = 70; //70.2
-    const k_bn = 32; //31.9
-    const bn_ko = 59; //59.3
 
     //BVR N -> IN -> M
     const w_n = 102; //102.2
@@ -53,6 +54,18 @@ function getDistance()
     }
 
     //Bonn
+    else if (result1 == "Bonn" && result2 == "Duisburg") {
+        document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Bonn" && result2 == "Dusseldorf") {
+        document.getElementById("test1").innerHTML = d_k + k_bn + "km";
+    }
+    else if (result1 == "Bonn" && result2 == "Dusseldorf Flughafen") {
+        document.getElementById("test1").innerHTML = df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Bonn" && result2 == "Essen") {
+        document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + "km";
+    }
     else if (result1 == "Bonn" && result2 == "Koblenz") {
         document.getElementById("test1").innerHTML = bn_ko + "km";
     }
@@ -84,6 +97,9 @@ function getDistance()
     }
 
     //Duisburg
+    else if (result1 == "Duisburg" && result2 == "Bonn") {
+        document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + "km";
+    }
     else if (result1 == "Duisburg" && result2 == "Dusseldorf") {
         document.getElementById("test1").innerHTML = du_df + df_d + "km";
     }
@@ -93,11 +109,17 @@ function getDistance()
     else if (result1 == "Duisburg" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = e_du + "km";
     }
+    else if (result1 == "Duisburg" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + bn_ko + "km";
+    }
     else if (result1 == "Duisburg" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = du_df + df_d + d_k + "km";
     }
 
     //Dusseldorf
+    else if (result1 == "Dusseldorf" && result2 == "Bonn") {
+        document.getElementById("test1").innerHTML = d_k + k_bn + "km";
+    }
     else if (result1 == "Dusseldorf" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = du_df + df_d + "km";
     }
@@ -107,8 +129,32 @@ function getDistance()
     else if (result1 == "Dusseldorf" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + "km";
     }
+    else if (result1 == "Dusseldorf" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = d_k + k_bn + bn_ko + "km";
+    }
     else if (result1 == "Dusseldorf" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = d_k + "km";
+    }
+
+
+    //Dusseldorf Flughafen
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Bonn") {
+        document.getElementById("test1").innerHTML = df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Duisburg") {
+        document.getElementById("test1").innerHTML = du_df + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Dusseldorf") {
+        document.getElementById("test1").innerHTML = df_d + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Essen") {
+        document.getElementById("test1").innerHTML = e_du + du_df + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = df_d + d_k + k_bn + bn_ko + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Koln") {
+        document.getElementById("test1").innerHTML = df_d + d_k + "km";
     }
 
     //Erfurt
@@ -123,6 +169,9 @@ function getDistance()
     }
 
     //Essen
+    else if (result1 == "Essen" && result2 == "Bonn") {
+        document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + "km";
+    }
     else if (result1 == "Essen" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = e_du + "km";
     }
@@ -131,6 +180,9 @@ function getDistance()
     }
     else if (result1 == "Essen" && result2 == "Dusseldorf Flughafen") {
         document.getElementById("test1").innerHTML = e_du + du_df + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + bn_ko + "km";
     }
     else if (result1 == "Essen" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + "km";
@@ -204,8 +256,23 @@ function getDistance()
     else if (result1 == "Koblenz" && result2 == "Bonn") {
         document.getElementById("test1").innerHTML = bn_ko + "km";
     }
+    else if (result1 == "Koblenz" && result2 == "Duisburg") {
+        document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + bn_ko + "km";
+    }
+    else if (result1 == "Koblenz" && result2 == "Dusseldorf") {
+        document.getElementById("test1").innerHTML = d_k + k_bn + bn_ko + "km";
+    }
+    else if (result1 == "Koblenz" && result2 == "Dusseldorf Flughafen") {
+        document.getElementById("test1").innerHTML = df_d + d_k + k_bn + bn_ko + "km";
+    }
+    else if (result1 == "Koblenz" && result2 == "Essen") {
+        document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + bn_ko + "km";
+    }
     else if (result1 == "Koblenz" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = k_bn + bn_ko + "km";
+    }
+    else if (result1 == "Koblenz" && result2 == "Mainz") {
+        document.getElementById("test1").innerHTML = ko_mz + "km";
     }
 
     //Koln
@@ -221,7 +288,7 @@ function getDistance()
     else if (result1 == "Koln" && result2 == "Dusseldorf") {
         document.getElementById("test1").innerHTML = d_k + "km";
     }
-    else if (result1 == "Koln" && result2 == "Dusseldorf") {
+    else if (result1 == "Koln" && result2 == "Dusseldorf Flughafen") {
         document.getElementById("test1").innerHTML = df_d + d_k + "km";
     }
     else if (result1 == "Koln" && result2 == "Essen") {
@@ -235,6 +302,11 @@ function getDistance()
     }
     else if (result1 == "Koln" && result2 == "Koblenz") {
         document.getElementById("test1").innerHTML = k_bn + bn_ko + "km";
+    }
+
+    //Mainz
+    else if (result1 == "Mainz" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = ko_mz + "km";
     }
 
     //Munchen
