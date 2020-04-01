@@ -9,6 +9,7 @@ function getDistance()
     const b_hh = 250;
     const b_h = 287; //286.6
     const hh_h = 181; //181.4
+    const os_h = 132; //132.4
 
     const hb_hh = 122; //122.3
     const hb_h = 116; //115.6
@@ -20,7 +21,6 @@ function getDistance()
 
     const do_bo = 19; //19.1
     const bo_e = 16.5; //
-    const do_k = ;
     
     //NRW north to south E -> DU -> DF -> D -> k
     const e_du = 19; //19.4
@@ -36,6 +36,9 @@ function getDistance()
     const k_ff = 169; //169.3
     const k_aa = 70; //70.2
 
+    const f_ef_spr = 267;
+    const ef_b_spr = 256.5;
+
     //BVR N -> IN -> M
     const w_n = 102; //102.2
     const n_ef = 191;
@@ -43,7 +46,10 @@ function getDistance()
     const in_m = 81;
 
     //Berlin
-    if (result1 == "Berlin" && result2 == "Hamburg") {
+    if (result1 == "Berlin" && result2 == "Osnabruck") {
+        document.getElementById("test1").innerHTML = os_h + b_h + "km";
+    }
+    else if (result1 == "Berlin" && result2 == "Hamburg") {
         document.getElementById("test1").innerHTML = b_hh + "km";
     }
     else if (result1 == "Berlin" && result2 == "Hannover") {
@@ -54,6 +60,12 @@ function getDistance()
     }
     else if (result1 == "Berlin" && result2 == "Bremen via Hannover") {
         document.getElementById("test1").innerHTML = hb_h + b_h + "km";
+    }
+    else if (result1 == "Berlin" && result2 == "Erfurt (Sprinter)") {
+        document.getElementById("test1").innerHTML = ef_b_spr + "km";
+    }
+    else if (result1 == "Berlin" && result2 == "Frankfurt am Main (Sprinter)") {
+        document.getElementById("test1").innerHTML = f_ef_spr + ef_b_spr + "km";
     }
 
     //Aachen
@@ -251,6 +263,12 @@ function getDistance()
     }
 
     //Erfurt
+    else if (result1 == "Erfurt" && result2 == "Berlin (Sprinter)") {
+        document.getElementById("test1").innerHTML = ef_b_spr + "km";
+    }
+    else if (result1 == "Erfurt" && result2 == "Frankfurt am Main (Sprinter)") {
+        document.getElementById("test1").innerHTML = f_ef_spr + "km";
+    }
     else if (result1 == "Erfurt" && result2 == "Nurnberg") {
         document.getElementById("test1").innerHTML = n_ef + "km";
     }
@@ -303,8 +321,14 @@ function getDistance()
     }
 
     //Frankfurt am Main
+    else if (result1 == "Frankfurt am Main" && result2 == "Berlin (Sprinter)") {
+        document.getElementById("test1").innerHTML = f_ef_spr + ef_b_spr + "km";
+    }
     else if (result1 == "Frankfurt am Main" && result2 == "Bremen") {
         document.getElementById("test1").innerHTML = hb_h + h_f + "km";
+    }
+    else if (result1 == "Frankfurt am Main" && result2 == "Erfurt (Sprinter)") {
+        document.getElementById("test1").innerHTML = f_ef_spr + "km";
     }
     else if (result1 == "Frankfurt am Main" && result2 == "Frankfurt Flughafen") {
         document.getElementById("test1").innerHTML = f_ff + "km";
@@ -350,6 +374,9 @@ function getDistance()
     }
     else if (result1 == "Hannover" && result2 == "Hamburg") {
         document.getElementById("test1").innerHTML = hh_h + "km";
+    }
+    else if (result1 == "Hannover" && result2 == "Osnabruck") {
+        document.getElementById("test1").innerHTML = os_h + "km";
     }
 
     //Ingolstadt
@@ -469,6 +496,9 @@ function getDistance()
     }
 
     //Osnabruck
+    else if (result1 == "Osnabruck" && result2 == "Berlin") {
+        document.getElementById("test1").innerHTML = os_h + b_h + "km";
+    }
     else if (result1 == "Osnabruck" && result2 == "Bremen") {
         document.getElementById("test1").innerHTML = hb_os + "km";
     }
@@ -489,6 +519,9 @@ function getDistance()
     }
     else if (result1 == "Osnabruck" && result2 == "Essen via Dortmund") {
         document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Hannover") {
+        document.getElementById("test1").innerHTML = os_h + "km";
     }
     else if (result1 == "Osnabruck" && result2 == "Munster") {
         document.getElementById("test1").innerHTML = os_ms + "km";

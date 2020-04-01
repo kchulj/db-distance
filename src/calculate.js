@@ -5,7 +5,8 @@ function calculate(x, y)
     y.innerHTML = "";
 
     if(x.value == "Berlin"){
-        var arr = ["-Select a city-","Bremen via Hamburg","Bremen via Hannover","Hamburg","Hannover"];
+        var arr = ["-Select a city-","Bremen via Hamburg","Bremen via Hannover","Erfurt (Sprinter)","Frankfurt am Main (Sprinter)",
+        "Hamburg","Hannover","Osnabruck"];
     }
 
     else if(x.value == "Aachen"){
@@ -50,7 +51,7 @@ function calculate(x, y)
     }
 
     else if(x.value == "Erfurt"){
-        var arr = ["-Select a city-","Ingolstadt","Munchen","Nurnberg"];
+        var arr = ["-Select a city-","Berlin (Sprinter)","Frankfurt am Main (Sprinter)","Ingolstadt","Munchen","Nurnberg"];
     }
 
     else if(x.value == "Essen"){
@@ -61,7 +62,7 @@ function calculate(x, y)
     }
 
     else if(x.value == "Frankfurt am Main"){
-        var arr = ["-Select a city-","Bremen","Frankfurt Flughafen","Hannover","Koln"];
+        var arr = ["-Select a city-","Berlin (Sprinter)","Bremen","Erfurt (Sprinter)","Frankfurt Flughafen","Hannover","Koln"];
     }
 
     else if(x.value == "Frankfurt Flughafen"){
@@ -73,7 +74,8 @@ function calculate(x, y)
     }
 
     else if(x.value == "Hannover"){
-        var arr = ["-Select a city-","Bremen","Frankfurt am Main","Frankfurt Flughafen","Hamburg"];
+        var arr = ["-Select a city-","Bremen","Frankfurt am Main","Frankfurt Flughafen","Hamburg",
+        "Osnabruck"];
     }
 
     else if(x.value == "Ingolstadt"){
@@ -106,9 +108,9 @@ function calculate(x, y)
     }
 
     else if(x.value == "Osnabruck"){
-        var arr = ["-Select a city-","Bremen","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
+        var arr = ["-Select a city-","Berlin","Bremen","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
         "Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
-        "Essen via Gelsenkirchen","Essen via Dortmund","Munster"];
+        "Essen via Gelsenkirchen","Essen via Dortmund","Hannover","Munster"];
     }
 
     else if(x.value == "Wurzburg"){
