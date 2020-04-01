@@ -8,16 +8,24 @@ function getDistance()
 
     const b_hh = 250;
     const b_h = 287; //286.6
+    const hh_h = 181; //181.4
 
     const hb_hh = 122; //122.3
     const hb_h = 116; //115.6
+    
     const hb_os = 122;
-    const hh_h = 181; //181.4
+    const os_ms = 50; //50.1
+    const ms_e = 83; //82.8
+    const ms_do = 56; //55.7
+
+    const do_bo = 19; //19.1
+    const bo_e = 16.5; //
+    const do_k = ;
     
     //NRW north to south E -> DU -> DF -> D -> k
     const e_du = 19; //19.4
     const du_df = 15; //15.4
-    const df_d = 8 // 8.2
+    const df_d = 8; // 8.2
     const d_k = 39.5;
     const k_bn = 32; //31.9
     const bn_ko = 59; //59.3
@@ -53,6 +61,17 @@ function getDistance()
         document.getElementById("test1").innerHTML = k_aa + "km";
     }
 
+    //Bochum
+    else if (result1 == "Bochum" && result2 == "Bremen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + "km";
+    }
+    else if (result1 == "Bochum" && result2 == "Dortmund") {
+        document.getElementById("test1").innerHTML = do_bo + "km";
+    }
+    else if (result1 == "Bochum" && result2 == "Essen") {
+        document.getElementById("test1").innerHTML = bo_e + "km";
+    }
+
     //Bonn
     else if (result1 == "Bonn" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + "km";
@@ -80,6 +99,36 @@ function getDistance()
     else if (result1 == "Bremen" && result2 == "Berlin via Hannover") {
         document.getElementById("test1").innerHTML = hb_h + b_h + "km";
     }
+    else if (result1 == "Bremen" && result2 == "Bochum") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Duisburg via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Duisburg via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Dusseldorf via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Dusseldorf via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Dusseldorf Flughafen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + du_df + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Dusseldorf Flughafen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + du_df + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Essen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Essen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + "km";
+    }
     else if (result1 == "Bremen" && result2 == "Frankfurt am Main") {
         document.getElementById("test1").innerHTML = hb_h + h_f + "km";
     }
@@ -92,13 +141,33 @@ function getDistance()
     else if (result1 == "Bremen" && result2 == "Hannover") {
         document.getElementById("test1").innerHTML = hb_h + "km";
     }
+    else if (result1 == "Bremen" && result2 == "Munster") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + "km";
+    }
     else if (result1 == "Bremen" && result2 == "Osnabruck") {
         document.getElementById("test1").innerHTML = hb_os + "km";
+    }
+
+    //Dortmund
+    else if (result1 == "Dortmund" && result2 == "Bremen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + "km";
+    }
+    else if (result1 == "Dortmund" && result2 == "Bochum") {
+        document.getElementById("test1").innerHTML = do_bo + "km";
+    }
+    else if (result1 == "Dortmund" && result2 == "Munster") {
+        document.getElementById("test1").innerHTML = ms_do + "km";
     }
 
     //Duisburg
     else if (result1 == "Duisburg" && result2 == "Bonn") {
         document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Duisburg" && result2 == "Bremen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Duisburg" && result2 == "Bremen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + "km";
     }
     else if (result1 == "Duisburg" && result2 == "Dusseldorf") {
         document.getElementById("test1").innerHTML = du_df + df_d + "km";
@@ -115,10 +184,22 @@ function getDistance()
     else if (result1 == "Duisburg" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = du_df + df_d + d_k + "km";
     }
+    else if (result1 == "Duisburg" && result2 == "Osnabruck via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Duisburg" && result2 == "Osnabruck via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + e_du + "km";
+    }
 
     //Dusseldorf
     else if (result1 == "Dusseldorf" && result2 == "Bonn") {
         document.getElementById("test1").innerHTML = d_k + k_bn + "km";
+    }
+    else if (result1 == "Dusseldorf" && result2 == "Bremen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Dusseldorf" && result2 == "Bremen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + du_df + df_d + "km";
     }
     else if (result1 == "Dusseldorf" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = du_df + df_d + "km";
@@ -135,11 +216,23 @@ function getDistance()
     else if (result1 == "Dusseldorf" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = d_k + "km";
     }
+    else if (result1 == "Dusseldorf" && result2 == "Osnabruck via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Dusseldorf" && result2 == "Osnabruck via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + e_du + du_df + df_d + "km";
+    }
 
 
     //Dusseldorf Flughafen
     else if (result1 == "Dusseldorf Flughafen" && result2 == "Bonn") {
         document.getElementById("test1").innerHTML = df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Bremen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + e_du + du_df + "km";
+    }
+    else if (result1 == "Dusseldorf Flughafen" && result2 == "Bremen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + e_du + du_df + "km";
     }
     else if (result1 == "Dusseldorf Flughafen" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = du_df + "km";
@@ -169,8 +262,17 @@ function getDistance()
     }
 
     //Essen
+    else if (result1 == "Essen" && result2 == "Bochum") {
+        document.getElementById("test1").innerHTML = bo_e + "km";
+    }
     else if (result1 == "Essen" && result2 == "Bonn") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Bremen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_e + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Bremen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + ms_do + do_bo + bo_e + "km";
     }
     else if (result1 == "Essen" && result2 == "Duisburg") {
         document.getElementById("test1").innerHTML = e_du + "km";
@@ -186,6 +288,18 @@ function getDistance()
     }
     else if (result1 == "Essen" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Munster via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = ms_e + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Munster via Dortmund") {
+        document.getElementById("test1").innerHTML = ms_do + do_bo + bo_e + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Osnabruck via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Osnabruck via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + "km";
     }
 
     //Frankfurt am Main
@@ -323,6 +437,23 @@ function getDistance()
         document.getElementById("test1").innerHTML = w_n + n_in + in_m + "km";
     }
 
+    //Munster
+    else if (result1 == "Munster" && result2 == "Bremen") {
+        document.getElementById("test1").innerHTML = hb_os + os_ms + "km";
+    }
+    else if (result1 == "Munster" && result2 == "Dortmund") {
+        document.getElementById("test1").innerHTML = ms_do + "km";
+    }
+    else if (result1 == "Munster" && result2 == "Essen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = ms_e + "km";
+    }
+    else if (result1 == "Munster" && result2 == "Essen via Dortmund") {
+        document.getElementById("test1").innerHTML = ms_do + do_bo + bo_e + "km";
+    }
+    else if (result1 == "Munster" && result2 == "Osnabruck") {
+        document.getElementById("test1").innerHTML = os_ms + "km";
+    }
+
     //Nurnberg
     else if (result1 == "Nurnberg" && result2 == "Erfurt") {
         document.getElementById("test1").innerHTML = n_ef + "km";
@@ -340,6 +471,27 @@ function getDistance()
     //Osnabruck
     else if (result1 == "Osnabruck" && result2 == "Bremen") {
         document.getElementById("test1").innerHTML = hb_os + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Duisburg via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Duisburg via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + e_du + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Dusseldorf via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Dusseldorf via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + e_du + du_df + df_d + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Essen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = os_ms + ms_e + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Essen via Dortmund") {
+        document.getElementById("test1").innerHTML = os_ms + ms_do + do_bo + bo_e + "km";
+    }
+    else if (result1 == "Osnabruck" && result2 == "Munster") {
+        document.getElementById("test1").innerHTML = os_ms + "km";
     }
 
     //Wurzburg

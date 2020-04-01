@@ -10,8 +10,8 @@ label {
 
 select, option {
     width:300px;
-    height:45px;
-    font-size: 24px;
+    height:35px;
+    font-size: 20px;
   }
 
 button {

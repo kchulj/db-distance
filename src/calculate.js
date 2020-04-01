@@ -12,24 +12,41 @@ function calculate(x, y)
         var arr = ["-Select a city-","Koln"];
     }
 
+    else if(x.value == "Bochum"){
+        var arr = ["-Select a city-","Bremen","Dortmund","Essen"];
+    }
+
     else if(x.value == "Bonn"){
         var arr = ["-Select a city-","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln"];
     }
 
     else if(x.value == "Bremen"){
-        var arr = ["-Select a city-","Berlin via Hamburg","Berlin via Hannover","Frankfurt am Main","Frankfurt Flughafen","Hamburg","Hannover","Osnabruck"];
+        var arr = ["-Select a city-","Berlin via Hamburg","Berlin via Hannover","Bochum","Dortmund",
+        "Duisburg via Gelsenkirchen","Duisburg via Dortmund",
+        "Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
+        "Dusseldorf Flughafen via Gelsenkirchen","Dusseldorf Flughafen via Dortmund",
+        "Essen via Gelsenkirchen","Essen via Dortmund",
+        "Frankfurt am Main","Frankfurt Flughafen","Hamburg","Hannover","Munster","Osnabruck"];
+    }
+
+    else if(x.value == "Dortmund"){
+        var arr = ["-Select a city-","Bochum","Bremen","Munster"];
     }
 
     else if(x.value == "Duisburg"){
-        var arr = ["-Select a city-","Bonn","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln"];
+        var arr = ["-Select a city-","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Bonn","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln",
+        "Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
     }
 
     else if(x.value == "Dusseldorf"){
-        var arr = ["-Select a city-","Bonn","Duisburg","Dusseldorf Flughafen","Essen","Koblenz","Koln"];
+        var arr = ["-Select a city-","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Duisburg","Dusseldorf Flughafen","Essen","Koblenz","Koln","Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
     }
 
     else if(x.value == "Dusseldorf Flughafen"){
-        var arr = ["-Select a city-","Bonn","Duisburg","Dusseldorf","Essen","Koblenz","Koln"];
+        var arr = ["-Select a city-","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Duisburg","Dusseldorf","Essen","Koblenz","Koln"];
     }
 
     else if(x.value == "Erfurt"){
@@ -37,7 +54,10 @@ function calculate(x, y)
     }
 
     else if(x.value == "Essen"){
-        var arr = ["-Select a city-","Bonn","Duisburg","Dusseldorf","Dusseldorf Flughafen","Duisburg","Koblenz","Koln"];
+        var arr = ["-Select a city-","Bochum","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Duisburg","Dusseldorf","Dusseldorf Flughafen","Duisburg",
+        "Koblenz","Koln","Munster via Gelsenkirchen","Munster via Dortmund",
+        "Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
     }
 
     else if(x.value == "Frankfurt am Main"){
@@ -65,7 +85,8 @@ function calculate(x, y)
     }
 
     else if(x.value == "Koln"){
-        var arr = ["-Select a city-","Aachen","Bonn","Dusseldorf","Dusseldorf Flughafen","Duisburg","Essen","Frankfurt am Main","Frankfurt Flughafen","Koblenz"];
+        var arr = ["-Select a city-","Aachen","Bonn","Dusseldorf","Dusseldorf Flughafen",
+        "Duisburg","Essen","Frankfurt am Main","Frankfurt Flughafen","Koblenz"];
     }
 
     else if(x.value == "Mainz"){
@@ -76,12 +97,18 @@ function calculate(x, y)
         var arr = ["-Select a city-","Erfurt","Ingolstadt","Nurnberg","Wurzburg"];
     }
 
+    else if(x.value == "Munster"){
+        var arr = ["-Select a city-","Bremen","Dortmund","Essen via Gelsenkirchen","Essen via Dortmund","Osnabruck"];
+    }
+
     else if(x.value == "Nurnberg"){
         var arr = ["-Select a city-","Erfurt","Ingolstadt","Munchen","Wurzburg"];
     }
 
     else if(x.value == "Osnabruck"){
-        var arr = ["-Select a city-","Bremen"];
+        var arr = ["-Select a city-","Bremen","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
+        "Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
+        "Essen via Gelsenkirchen","Essen via Dortmund","Munster"];
     }
 
     else if(x.value == "Wurzburg"){
