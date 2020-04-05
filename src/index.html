@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>Train Distance Calulator</h1>
+<h1>The Distance Calulator</h1>
 
 <div class="firstbox">
 <label for="origin">Select origin:</label>
@@ -24,8 +24,18 @@
 </div>
 
 <div class="wrapper">
-<button onclick="getDistance()">Search</button>
+<button id="myBtn" onclick="getDistance()">Search</button>
 </div>
+
+<script>
+    var input = document.getElementById("dest");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+        }
+    });
+</script>
 
 <h1 id="test1" style="padding:0px; text-align:center"></h1>
 <h1 id="test2" style="padding:0px; text-align:center"></h1>

@@ -10,15 +10,15 @@ function calculate(x, y)
     }
 
     else if(x.value == "Aachen"){
-        var arr = ["-Select a city-","Koln"];
+        var arr = ["-Select a city-","Bonn","Koblenz","Koln"];
     }
 
     else if(x.value == "Bochum"){
-        var arr = ["-Select a city-","Bremen","Dortmund","Essen"];
+        var arr = ["-Select a city-","Bremen","Dortmund","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Munster"];
     }
 
     else if(x.value == "Bonn"){
-        var arr = ["-Select a city-","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln"];
+        var arr = ["-Select a city-","Aachen","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln","Mainz"];
     }
 
     else if(x.value == "Bremen"){
@@ -31,23 +31,24 @@ function calculate(x, y)
     }
 
     else if(x.value == "Dortmund"){
-        var arr = ["-Select a city-","Bochum","Bremen","Munster"];
+        var arr = ["-Select a city-","Bochum","Bremen","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Munster","Osnabruck"];
     }
 
     else if(x.value == "Duisburg"){
-        var arr = ["-Select a city-","Bremen via Gelsenkirchen","Bremen via Dortmund",
-        "Bonn","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln",
-        "Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
+        var arr = ["-Select a city-","Bochum","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Bonn","Dortmund","Dusseldorf","Dusseldorf Flughafen","Essen","Koblenz","Koln",
+        "Munster via Gelsenkirchen","Munster via Dortmund",
+        "Osnabruck via Gelsenkirchen","Osnabruck via Dortmund"];
     }
 
     else if(x.value == "Dusseldorf"){
-        var arr = ["-Select a city-","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
-        "Duisburg","Dusseldorf Flughafen","Essen","Koblenz","Koln","Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
+        var arr = ["-Select a city-","Bochum","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund","Dortmund",
+        "Duisburg","Dusseldorf Flughafen","Essen","Koblenz","Koln","Osnabruck via Gelsenkirchen","Osnabruck via Dortmund"];
     }
 
     else if(x.value == "Dusseldorf Flughafen"){
-        var arr = ["-Select a city-","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
-        "Duisburg","Dusseldorf","Essen","Koblenz","Koln"];
+        var arr = ["-Select a city-","Bochum","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
+        "Dortmund","Duisburg","Dusseldorf","Essen","Koblenz","Koln"];
     }
 
     else if(x.value == "Erfurt"){
@@ -56,7 +57,7 @@ function calculate(x, y)
 
     else if(x.value == "Essen"){
         var arr = ["-Select a city-","Bochum","Bonn","Bremen via Gelsenkirchen","Bremen via Dortmund",
-        "Duisburg","Dusseldorf","Dusseldorf Flughafen","Duisburg",
+        "Dortmund","Duisburg","Dusseldorf","Dusseldorf Flughafen","Duisburg",
         "Koblenz","Koln","Munster via Gelsenkirchen","Munster via Dortmund",
         "Osnabruck via Gelsenkirchen","Osnabruck via Dortmund",];
     }
@@ -83,7 +84,7 @@ function calculate(x, y)
     }
 
     else if(x.value == "Koblenz"){
-        var arr = ["-Select a city-","Bonn","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Koln","Mainz"];
+        var arr = ["-Select a city-","Aachen","Bonn","Duisburg","Dusseldorf","Dusseldorf Flughafen","Essen","Koln","Mainz"];
     }
 
     else if(x.value == "Koln"){
@@ -92,7 +93,7 @@ function calculate(x, y)
     }
 
     else if(x.value == "Mainz"){
-        var arr = ["-Select a city-","Koblenz"];
+        var arr = ["-Select a city-","Bonn","Koblenz"];
     }
 
     else if(x.value == "Munchen"){
@@ -100,7 +101,8 @@ function calculate(x, y)
     }
 
     else if(x.value == "Munster"){
-        var arr = ["-Select a city-","Bremen","Dortmund","Essen via Gelsenkirchen","Essen via Dortmund","Osnabruck"];
+        var arr = ["-Select a city-","Bochum","Bremen","Dortmund","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
+        "Essen via Gelsenkirchen","Essen via Dortmund","Osnabruck"];
     }
 
     else if(x.value == "Nurnberg"){
@@ -109,7 +111,7 @@ function calculate(x, y)
 
     else if(x.value == "Osnabruck"){
         var arr = ["-Select a city-","Berlin","Bremen","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
-        "Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
+        "Dortmund","Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
         "Essen via Gelsenkirchen","Essen via Dortmund","Hannover","Munster"];
     }
 
