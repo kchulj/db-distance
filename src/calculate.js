@@ -63,20 +63,26 @@ function calculate(x, y)
     }
 
     else if(x.value == "Frankfurt am Main"){
-        var arr = ["-Select a city-","Berlin (Sprinter)","Bremen","Erfurt (Sprinter)","Frankfurt Flughafen","Hannover","Koln"];
+        var arr = ["-Select a city-","Berlin (Sprinter)","Bremen","Erfurt (Sprinter)","Frankfurt Flughafen","Hannover",
+        "Heidelberg","Koln","Mainz","Mannheim","Nurnberg","Wurzburg"];
     }
 
     else if(x.value == "Frankfurt Flughafen"){
-        var arr = ["-Select a city-","Bremen","Frankfurt am Main", "Hannover","Koln"];
+        var arr = ["-Select a city-","Bremen","Frankfurt am Main", "Hannover","Koln",
+        "Mainz","Mannheim","Nurnberg"];
     }
 
     else if(x.value == "Hamburg"){
-        var arr = ["-Select a city-","Bremen","Hannover"];
+        var arr = ["-Select a city-","Bremen","Hannover","Munster","Osnabruck"];
     }
 
     else if(x.value == "Hannover"){
         var arr = ["-Select a city-","Bremen","Frankfurt am Main","Frankfurt Flughafen","Hamburg",
-        "Osnabruck"];
+        "Osnabruck","Nurnberg","Wurzburg"];
+    }
+
+    else if(x.value == "Heidelberg"){
+        var arr = ["-Select a city-","Frankfurt am Main","Mainz","Mannheim","Wurzburg"];
     }
 
     else if(x.value == "Ingolstadt"){
@@ -93,7 +99,13 @@ function calculate(x, y)
     }
 
     else if(x.value == "Mainz"){
-        var arr = ["-Select a city-","Bonn","Koblenz"];
+        var arr = ["-Select a city-","Bonn","Frankfurt am Main","Frankfurt Flughafen","Heidelberg","Koblenz",
+        "Mannheim","Nurnberg","Wurzburg"];
+    }
+
+    else if(x.value == "Mannheim"){
+        var arr = ["-Select a city-","Frankfurt am Main","Frankfurt Flughafen","Heidelberg",
+        "Mainz","Stuttgart","Wurzburg"];
     }
 
     else if(x.value == "Munchen"){
@@ -102,21 +114,27 @@ function calculate(x, y)
 
     else if(x.value == "Munster"){
         var arr = ["-Select a city-","Bochum","Bremen","Dortmund","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
-        "Essen via Gelsenkirchen","Essen via Dortmund","Osnabruck"];
+        "Essen via Gelsenkirchen","Essen via Dortmund","Hamburg","Osnabruck"];
     }
 
     else if(x.value == "Nurnberg"){
-        var arr = ["-Select a city-","Erfurt","Ingolstadt","Munchen","Wurzburg"];
+        var arr = ["-Select a city-","Erfurt","Frankfurt am Main","Frankfurt Flughafen","Hannover",
+        "Ingolstadt","Mainz","Munchen","Wurzburg"];
     }
 
     else if(x.value == "Osnabruck"){
         var arr = ["-Select a city-","Berlin","Bremen","Duisburg via Gelsenkirchen","Duisburg via Dortmund",
         "Dortmund","Dusseldorf via Gelsenkirchen","Dusseldorf via Dortmund",
-        "Essen via Gelsenkirchen","Essen via Dortmund","Hannover","Munster"];
+        "Essen via Gelsenkirchen","Essen via Dortmund","Hamburg","Hannover","Munster"];
+    }
+
+    else if(x.value == "Stuttgart"){
+        var arr = ["-Select a city-","Mannheim"];
     }
 
     else if(x.value == "Wurzburg"){
-        var arr = ["-Select a city-","Ingolstadt","Munchen","Nurnberg"];
+        var arr = ["-Select a city-","Frankfurt am Main","Hannover","Heidelberg",
+        "Ingolstadt","Mainz","Mannheim","Munchen","Nurnberg"];
     }
 
     for(var option in arr){

@@ -2,9 +2,9 @@ var cityList = document.getElementById('origin'),
     cityArr = ["-Select a city-","Aachen","Berlin","Bochum","Bonn","Bremen",
     "Dortmund","Duisburg","Dusseldorf","Dusseldorf Flughafen",
     "Erfurt","Essen","Frankfurt am Main","Frankfurt Flughafen",
-    "Hamburg","Hannover","Ingolstadt","Koblenz",
-    "Koln","Mainz","Munchen","Munster",
-    "Nurnberg","Osnabruck","Wurzburg"];
+    "Hamburg","Hannover","Heidelberg","Ingolstadt","Koblenz",
+    "Koln","Mainz","Mannheim","Munchen","Munster",
+    "Nurnberg","Osnabruck","Stuttgart","Wurzburg"];
              
     for(var i = 0; i < cityArr.length; i++)
         {
