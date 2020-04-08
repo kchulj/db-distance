@@ -39,11 +39,12 @@ function getDistance()
     const f_ff = 11.4; //11.4
     const k_ff = 169.3; //169.3
     const f_ma = 80.9;
-    const ff_ma = 75.4;
     const f_hd = 87.9;
+    const ff_ma = 75.4;
     const ma_hd = 19.1;
     const ma_s = 105.9;
     const hd_s = 89.4;
+    const n_s = 203;
 
     const h_w = 327.4;
     const f_w = 135.5;
@@ -108,6 +109,9 @@ function getDistance()
     }
     else if (result1 == "Bochum" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = bo_e + "km";
+    }
+    else if (result1 == "Bochum" && result2 == "Hamburg") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + "km";
     }
     else if (result1 == "Bochum" && result2 == "Munster") {
         document.getElementById("test1").innerHTML = ms_do + do_bo + "km";
@@ -191,8 +195,14 @@ function getDistance()
     else if (result1 == "Bremen" && result2 == "Munster") {
         document.getElementById("test1").innerHTML = hb_os + os_ms + "km";
     }
+    else if (result1 == "Bremen" && result2 == "Nurnberg") {
+        document.getElementById("test1").innerHTML = hb_h + h_w + w_n + "km";
+    }
     else if (result1 == "Bremen" && result2 == "Osnabruck") {
         document.getElementById("test1").innerHTML = hb_os + "km";
+    }
+    else if (result1 == "Bremen" && result2 == "Wurzburg") {
+        document.getElementById("test1").innerHTML = hb_h + h_w + "km";
     }
 
     //Dortmund
@@ -213,6 +223,9 @@ function getDistance()
     }
     else if (result1 == "Dortmund" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = do_bo + bo_e + "km";
+    }
+    else if (result1 == "Dortmund" && result2 == "Hamburg") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + "km";
     }
     else if (result1 == "Dortmund" && result2 == "Munster") {
         document.getElementById("test1").innerHTML = ms_do + "km";
@@ -245,6 +258,12 @@ function getDistance()
     }
     else if (result1 == "Duisburg" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = e_du + "km";
+    }
+    else if (result1 == "Duisburg" && result2 == "Hamburg via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Duisburg" && result2 == "Hamburg via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + bo_e + e_du + "km";
     }
     else if (result1 == "Duisburg" && result2 == "Koblenz") {
         document.getElementById("test1").innerHTML = du_df + df_d + d_k + k_bn + bn_ko + "km";
@@ -378,6 +397,12 @@ function getDistance()
     else if (result1 == "Essen" && result2 == "Dusseldorf Flughafen") {
         document.getElementById("test1").innerHTML = e_du + du_df + "km";
     }
+    else if (result1 == "Essen" && result2 == "Hamburg via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_e + "km";
+    }
+    else if (result1 == "Essen" && result2 == "Hamburg via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + bo_e + "km";
+    }
     else if (result1 == "Essen" && result2 == "Koblenz") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + bn_ko + "km";
     }
@@ -410,11 +435,17 @@ function getDistance()
     else if (result1 == "Frankfurt am Main" && result2 == "Frankfurt Flughafen") {
         document.getElementById("test1").innerHTML = f_ff + "km";
     }
+    else if (result1 == "Frankfurt am Main" && result2 == "Hamburg") {
+        document.getElementById("test1").innerHTML = hh_h + h_f + "km";
+    }
     else if (result1 == "Frankfurt am Main" && result2 == "Hannover") {
         document.getElementById("test1").innerHTML = h_f + "km";
     }
     else if (result1 == "Frankfurt am Main" && result2 == "Heidelberg") {
         document.getElementById("test1").innerHTML = f_hd + "km";
+    }
+    else if (result1 == "Frankfurt am Main" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = ko_mz + mz_ff + f_ff + "km";
     }
     else if (result1 == "Frankfurt am Main" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = f_ff + k_ff + "km";
@@ -428,6 +459,12 @@ function getDistance()
     else if (result1 == "Frankfurt am Main" && result2 == "Nurnberg") {
         document.getElementById("test1").innerHTML = f_w + w_n + "km";
     }
+    else if (result1 == "Frankfurt am Main" && result2 == "Stuttgart via Heidelberg") {
+        document.getElementById("test1").innerHTML = f_hd + hd_s + "km";
+    }
+    else if (result1 == "Frankfurt am Main" && result2 == "Stuttgart via Mannheim") {
+        document.getElementById("test1").innerHTML = f_ma + ma_s + "km";
+        }
     else if (result1 == "Frankfurt am Main" && result2 == "Wurzburg") {
         document.getElementById("test1").innerHTML = f_w + "km";
     }
@@ -435,6 +472,9 @@ function getDistance()
     //Frankfurt Flughafen
     else if (result1 == "Frankfurt Flughafen" && result2 == "Bremen") {
         document.getElementById("test1").innerHTML = hb_h + h_f + f_ff + "km";
+    }
+    else if (result1 == "Frankfurt Flughafen" && result2 == "Hamburg") {
+        document.getElementById("test1").innerHTML = hh_h + h_f + f_ff + "km";
     }
     else if (result1 == "Frankfurt Flughafen" && result2 == "Hannover") {
         document.getElementById("test1").innerHTML = h_f + f_ff + "km";
@@ -454,10 +494,37 @@ function getDistance()
     else if (result1 == "Frankfurt Flughafen" && result2 == "Nurnberg") {
         document.getElementById("test1").innerHTML = f_ff + f_w + w_n + "km";
     }
+    else if (result1 == "Frankfurt Flughafen" && result2 == "Stuttgart") {
+        document.getElementById("test1").innerHTML = ff_ma + ma_s + "km";
+        }
 
     //Hamburg
+    else if (result1 == "Hamburg" && result2 == "Bochum") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + "km";
+    }
     else if (result1 == "Hamburg" && result2 == "Bremen") {
         document.getElementById("test1").innerHTML = hb_hh + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Dortmund") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Duisburg via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_e + e_du + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Duisburg via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + bo_e + e_du + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Essen via Gelsenkirchen") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_e + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Essen via Dortmund") {
+        document.getElementById("test1").innerHTML = hb_hh + hb_os + os_ms + ms_do + do_bo + bo_e + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Frankfurt am Main") {
+        document.getElementById("test1").innerHTML = hh_h + h_f + "km";
+    }
+    else if (result1 == "Hamburg" && result2 == "Frankfurt Flughafen") {
+        document.getElementById("test1").innerHTML = hh_h + h_f + f_ff + "km";
     }
     else if (result1 == "Hamburg" && result2 == "Hannover") {
         document.getElementById("test1").innerHTML = hh_h + "km";
@@ -482,6 +549,12 @@ function getDistance()
     else if (result1 == "Hannover" && result2 == "Hamburg") {
         document.getElementById("test1").innerHTML = hh_h + "km";
     }
+    else if (result1 == "Hannover" && result2 == "Heidelberg") {
+        document.getElementById("test1").innerHTML = h_f + f_hd + "km";
+    }
+    else if (result1 == "Hannover" && result2 == "Mannheim") {
+        document.getElementById("test1").innerHTML = h_f + f_ma + "km";
+    }
     else if (result1 == "Hannover" && result2 == "Nurnberg") {
         document.getElementById("test1").innerHTML = h_w + w_n + "km";
     }
@@ -495,6 +568,9 @@ function getDistance()
     //Heidelberg
     else if (result1 == "Heidelberg" && result2 == "Frankfurt am Main") {
         document.getElementById("test1").innerHTML = f_hd + "km";
+    }
+    else if (result1 == "Heidelberg" && result2 == "Hannover") {
+        document.getElementById("test1").innerHTML = h_f + f_hd + "km";
     }
     else if (result1 == "Heidelberg" && result2 == "Mainz") {
         document.getElementById("test1").innerHTML = mz_ma + ma_hd + "km";
@@ -542,11 +618,17 @@ function getDistance()
     else if (result1 == "Koblenz" && result2 == "Essen") {
         document.getElementById("test1").innerHTML = e_du + du_df + df_d + d_k + k_bn + bn_ko + "km";
     }
+    else if (result1 == "Koblenz" && result2 == "Frankfurt am Main") {
+        document.getElementById("test1").innerHTML = ko_mz + mz_ff + f_ff + "km";
+    }
     else if (result1 == "Koblenz" && result2 == "Koln") {
         document.getElementById("test1").innerHTML = k_bn + bn_ko + "km";
     }
     else if (result1 == "Koblenz" && result2 == "Mainz") {
         document.getElementById("test1").innerHTML = ko_mz + "km";
+    }
+    else if (result1 == "Koblenz" && result2 == "Mannheim") {
+        document.getElementById("test1").innerHTML = ko_mz + mz_ma + "km";
     }
 
     //Koln
@@ -611,11 +693,20 @@ function getDistance()
     else if (result1 == "Mannheim" && result2 == "Frankfurt Flughafen") {
         document.getElementById("test1").innerHTML = ff_ma + "km";
     }
+    else if (result1 == "Mannheim" && result2 == "Hannover") {
+        document.getElementById("test1").innerHTML = h_f + f_ma + "km";
+    }
     else if (result1 == "Mannheim" && result2 == "Heidelberg") {
         document.getElementById("test1").innerHTML = ma_hd + "km";
     }
+    else if (result1 == "Mannheim" && result2 == "Koblenz") {
+        document.getElementById("test1").innerHTML = ko_mz + mz_ma + "km";
+    }
     else if (result1 == "Mannheim" && result2 == "Mainz") {
         document.getElementById("test1").innerHTML = mz_ma + "km";
+    }
+    else if (result1 == "Mannheim" && result2 == "Nurnberg") {
+        document.getElementById("test1").innerHTML = f_ma + f_w + w_n + "km";
     }
     else if (result1 == "Mannheim" && result2 == "Stuttgart") {
         document.getElementById("test1").innerHTML = ma_s + "km";
@@ -668,6 +759,9 @@ function getDistance()
     }
 
     //Nurnberg
+    else if (result1 == "Nurnberg" && result2 == "Bremen") {
+        document.getElementById("test1").innerHTML = hb_h + h_w + w_n + "km";
+    }
     else if (result1 == "Nurnberg" && result2 == "Erfurt") {
         document.getElementById("test1").innerHTML = n_ef + "km";
     }
@@ -686,8 +780,14 @@ function getDistance()
     else if (result1 == "Nurnberg" && result2 == "Mainz") {
         document.getElementById("test1").innerHTML = mz_ff + f_ff + f_w + w_n + "km";
     }
+    else if (result1 == "Nurnberg" && result2 == "Mannheim") {
+        document.getElementById("test1").innerHTML = f_ma + f_w + w_n + "km";
+    }
     else if (result1 == "Nurnberg" && result2 == "Munchen") {
         document.getElementById("test1").innerHTML = n_in + in_m + "km";
+    }
+    else if (result1 == "Nurnberg" && result2 == "Stuttgart") {
+        document.getElementById("test1").innerHTML = n_s + "km";
     }
     else if (result1 == "Nurnberg" && result2 == "Wurzburg") {
         document.getElementById("test1").innerHTML = w_n + "km";
@@ -732,14 +832,29 @@ function getDistance()
     }
 
     //Stuttgart
+    else if (result1 == "Stuttgart" && result2 == "Frankfurt am Main via Heidelberg") {
+        document.getElementById("test1").innerHTML = f_hd + hd_s + "km";
+    }
+    else if (result1 == "Stuttgart" && result2 == "Frankfurt am Main via Mannheim") {
+        document.getElementById("test1").innerHTML = f_ma + ma_s + "km";
+        }
+    else if (result1 == "Stuttgart" && result2 == "Frankfurt Flughafen") {
+        document.getElementById("test1").innerHTML = ff_ma + ma_s + "km";
+        }
     else if (result1 == "Stuttgart" && result2 == "Heidelberg") {
         document.getElementById("test1").innerHTML = hd_s + "km";
     }
     else if (result1 == "Stuttgart" && result2 == "Mannheim") {
         document.getElementById("test1").innerHTML = ma_s + "km";
     }
+    else if (result1 == "Stuttgart" && result2 == "Nurnberg") {
+        document.getElementById("test1").innerHTML = n_s + "km";
+    }
 
     //Wurzburg
+    else if (result1 == "Wurzburg" && result2 == "Bremen") {
+        document.getElementById("test1").innerHTML = hb_h + h_w + "km";
+    }
     else if (result1 == "Wurzburg" && result2 == "Frankfurt am Main") {
         document.getElementById("test1").innerHTML = f_w + "km";
     }
